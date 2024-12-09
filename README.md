@@ -1,6 +1,6 @@
 # BIOENG C131/231 Final Project
 
-This project focused on the Flavivirus family, and specifically takes a look into the variant types of Dengue viruses.
+This project focused on the Flavivirus family, and specifically takes a look into the variant types of Dengue viruses. Follow the below steps to create your own copy of the JBrowse2 genome browser. You can also see a working genome browser at this GitHub Page: https://ddf23.github.io or at this link (AWS hosting): http://18.117.233.155/jbrowse2/.
 
 ## 1. Browser setup (guided by Lab 8)
 
