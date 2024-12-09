@@ -1,0 +1,422 @@
+{
+  "assemblies": [
+    {
+      "name": "dengue_type1",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "dengue_type1-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "dengue_type1.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "dengue_type1.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "dengue_type2",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "dengue_type2-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "dengue_type2.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "dengue_type2.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "dengue_type3",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "dengue_type3-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "dengue_type3.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "dengue_type3.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "dengue_type4",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "dengue_type4-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "dengue_type4.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "dengue_type4.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "defaultSession": {
+    "name": "New Session"
+  },
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "dengue_type1_genes.gff",
+      "name": "dengue_type1_genes.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "dengue_type1_genes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "dengue_type1_genes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "dengue_type1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "dengue_type2_genes.gff",
+      "name": "dengue_type2_genes.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "dengue_type2_genes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "dengue_type2_genes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "dengue_type2"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "dengue_type3_genes.gff",
+      "name": "dengue_type3_genes.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "dengue_type3_genes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "dengue_type3_genes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "dengue_type3"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "dengue_type4_genes.gff",
+      "name": "dengue_type4_genes.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "dengue_type4_genes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "dengue_type4_genes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "dengue_type4"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "dengue_type1_vs_dengue_type2",
+      "name": "dengue_type1_vs_dengue_type2",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "dengue_type1_vs_dengue_type2.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "dengue_type1",
+          "dengue_type2"
+        ]
+      },
+      "assemblyNames": [
+        "dengue_type1",
+        "dengue_type2"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "dengue_type1_vs_dengue_type3",
+      "name": "dengue_type1_vs_dengue_type3",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "dengue_type1_vs_dengue_type3.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "dengue_type1",
+          "dengue_type3"
+        ]
+      },
+      "assemblyNames": [
+        "dengue_type1",
+        "dengue_type3"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "dengue_type1_vs_dengue_type4",
+      "name": "dengue_type1_vs_dengue_type4",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "dengue_type1_vs_dengue_type4.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "dengue_type1",
+          "dengue_type4"
+        ]
+      },
+      "assemblyNames": [
+        "dengue_type1",
+        "dengue_type4"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "dengue_type2_vs_dengue_type4",
+      "name": "dengue_type2_vs_dengue_type4",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "dengue_type2_vs_dengue_type4.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "dengue_type2",
+          "dengue_type4"
+        ]
+      },
+      "assemblyNames": [
+        "dengue_type2",
+        "dengue_type4"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "dengue_type2_vs_dengue_type3",
+      "name": "dengue_type2_vs_dengue_type3",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "dengue_type2_vs_dengue_type3.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "dengue_type2",
+          "dengue_type3"
+        ]
+      },
+      "assemblyNames": [
+        "dengue_type2",
+        "dengue_type3"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "dengue_type3_vs_dengue_type4",
+      "name": "dengue_type3_vs_dengue_type4",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "dengue_type3_vs_dengue_type4.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "dengue_type3",
+          "dengue_type4"
+        ]
+      },
+      "assemblyNames": [
+        "dengue_type3",
+        "dengue_type4"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "test_genes1.gff",
+      "name": "test_genes1.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "test_genes1.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "test_genes1.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "gene_type1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "test_type1_genes.gff",
+      "name": "test_type1_genes.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "test_type1_genes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "test_type1_genes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "dengue_type1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "test_type2_genes.gff",
+      "name": "test_type2_genes.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "test_type2_genes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "test_type2_genes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "dengue_type2"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "test_type3_genes.gff",
+      "name": "test_type3_genes.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "test_type3_genes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "test_type3_genes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "dengue_type3"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "test_type4_genes.gff",
+      "name": "test_type4_genes.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "test_type4_genes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "test_type4_genes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "dengue_type4"
+      ]
+    }
+  ],
+  "aggregateTextSearchAdapters": [
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "dengue_type1-index",
+      "ixFilePath": {
+        "uri": "trix/dengue_type1.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/dengue_type1.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/dengue_type1_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "dengue_type1"
+      ]
+    }
+  ]
+}
